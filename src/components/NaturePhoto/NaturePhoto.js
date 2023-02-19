@@ -11,8 +11,7 @@ const NaturePhoto = () => {
   }, []);
   return (
     <div className="parent-photo-div">
-      <div>
-        <h1>This is nature {photoProduct.length}</h1>
+      <div className="single-photo-div">
         {photoProduct.map((singlePhoto) => (
           <SinglePhoto
             singlePhoto={singlePhoto}
