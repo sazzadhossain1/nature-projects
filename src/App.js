@@ -1,9 +1,10 @@
 import "./App.css";
+import NaturePhoto from "./components/NaturePhoto/NaturePhoto";
 
 function App() {
   return (
     <div className="App">
-      <h1>This is App component</h1>
+      <NaturePhoto></NaturePhoto>
     </div>
   );
 }

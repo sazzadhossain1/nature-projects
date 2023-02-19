@@ -1,0 +1,4 @@
+.parent-photo-div {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
