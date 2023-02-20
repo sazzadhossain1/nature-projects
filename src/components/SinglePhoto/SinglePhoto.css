@@ -13,6 +13,7 @@
   text-align: left;
   margin-left: 10px;
 }
+
 .cart-btn {
   background-color: rgba(0, 255, 255, 0.39);
   border: none;
@@ -21,4 +22,11 @@
   font-size: 15px;
   font-weight: 500;
   border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.font {
+  margin-left: 10px;
 }

@@ -1,9 +1,11 @@
 import React from "react";
 import "./SinglePhoto.css";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SinglePhoto = (props) => {
-  const { name, price, seller, ratings, img } = props.singlePhoto;
-  console.log(name);
+  const { name, price, seller, ratings, img, id } = props.singlePhoto;
+
   return (
     <div className="single-photo-div-child">
       <img src={img} alt="" className="img-photo" />
@@ -15,7 +17,17 @@ const SinglePhoto = (props) => {
           <h6>Seller: {seller}</h6>
         </div>
       </div>
-      <button className="cart-btn"> Add To Cart</button>
+      <div>
+        <button
+          className="cart-btn"
+          onClick={() => props.handleState(name, id)}
+        >
+          <div>Add To Cart</div>
+          <div className="font">
+            <FontAwesomeIcon icon={faShoppingCart} />
+          </div>
+        </button>
+      </div>
     </div>
   );
 };
